@@ -3,36 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>Risk Management Dashboard</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 25px;
-            padding: 25px;
-        }
-        #employeesContainer {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 15px;
-        }
-        .employees-card {
-            padding: 15px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            background-color: #f9f9f9;
-        }
-    </style>
+    
 </head>
 <body>
-    <header>
+    
         <h1>Risk Management Dashboard</h1>
-    </header>
-    <main>
-        <div id="riskDashboard"></div>
-    </main>
-    <footer>
-        <p>Company 718 - Risk Management System</p>
-    </footer>
+        <form id="includeriskForm">
+            <label for="riskName" >Name of Risk :</label>
+            <input type="text" id="riskLevel" name="Risk Level (Low level, Medium level, High Level)" required>
+            <input type="text" id="department" name:"Department" required>
+            <button type="submit">Add Risk</button>
+        </form>
+        <div id="riskDashboard">
+    </div>
+    
     <script src="cc_15.js"></script>
 </body>
 </html>
