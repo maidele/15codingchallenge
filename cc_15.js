@@ -45,7 +45,7 @@ riskDashboard.appendChild(riskCard);
        const resolveButton = riskCard.querySelector('resolveButton');
        resolveBtn.addEventListener('click', function () {
            riskDashboard.removeChild(riskCard);
-       });//Categorizing Risks by Level
+       });//Categorizing Risks by Level for task 4
 
 //Task 5
 const increaseRiskLevelsBtn = document.getElementById('increasButtonLevelRisk');
