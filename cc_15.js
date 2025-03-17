@@ -20,3 +20,15 @@ document.addEventListener('DOMContentLoaded', function () {
         riskDashboard.appendChild(riskCard);
     }
 });
+
+//Task 3:
+
+    // removes risky items; remove button
+    const resolveBtn = document.createElement('resolveButton');
+    resolveBtn.addEventListener('click', function (event) {
+        event.stopPropagation();
+        riskDashboard.removeChild(riskCard);
+    });
+
+
+
