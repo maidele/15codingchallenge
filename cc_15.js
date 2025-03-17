@@ -58,4 +58,4 @@ increaseRiskLevelsBtn.addEventListener('click', function () {
 riskCards.forEach(card => {card.addEventListener('click', function(event) {
         
         event.stopPropagation();
-    });//Handling Event Propagation
+    });//Handling Event Propagation for task 6
