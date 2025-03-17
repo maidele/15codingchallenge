@@ -30,5 +30,22 @@ document.addEventListener('DOMContentLoaded', function () {
         riskDashboard.removeChild(riskCard);
     });
 
+//Task 4- 
+if (risk === 'low') {
+    riskCard.style.backgroundColor = 'green';
+} else if (risk === 'medium') {
+    riskCard.style.backgroundColor = 'yellow';
+} else if (risk === 'high') {
+    riskCard.style.backgroundColor = 'red';
+}
+riskDashboard.appendChild(riskCard);
+
+       // 
+       const resolveButton = riskCard.querySelector('resolveButton');
+       resolveBtn.addEventListener('click', function () {
+           riskDashboard.removeChild(riskCard);
+       });
+
+
 
 
