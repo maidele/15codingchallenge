@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 //Task 3:
 
-    // removes risky items; remove button
+    // removes risky items; remove button for task 3
     const resolveBtn = document.createElement('resolveButton');
     resolveBtn.addEventListener('click', function (event) {
         event.stopPropagation();
