@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function () {
         <strong>Risk Level:</strong> ${riskLevel}<br>
         <strong>Department:</strong> ${department}<br>`;
         
-        riskDashboard.appendChild(riskCard);
+        riskDashboard.appendChild(riskCard);//Adding Risk Items Dynamically
     }
 });
 
@@ -27,7 +27,8 @@ document.addEventListener('DOMContentLoaded', function () {
     const resolveBtn = document.createElement('resolveButton');
     resolveBtn.addEventListener('click', function (event) {
         event.stopPropagation();
-        riskDashboard.removeChild(riskCard);
+        riskDashboard.removeChild(riskCard);//Removing Risk Items
+
     });
 
 //Task 4- 
@@ -44,8 +45,17 @@ riskDashboard.appendChild(riskCard);
        const resolveButton = riskCard.querySelector('resolveButton');
        resolveBtn.addEventListener('click', function () {
            riskDashboard.removeChild(riskCard);
-       });
+       });//Categorizing Risks by Level
+
+//Task 5
+const increaseRiskLevelsBtn = document.getElementById('increasButtonLevelRisk');
+riskLevelElem.textContent.split("Risk level increasing ")
+increaseRiskLevelsBtn.addEventListener('click', function () {
+    const riskcards = document.querySelectorAll('.riskCard');//Implementing Bulk Updates
 
 
-
-
+//Task 6
+riskCards.forEach(card => {card.addEventListener('click', function(event) {
+        
+        event.stopPropagation();
+    });//Handling Event Propagation
