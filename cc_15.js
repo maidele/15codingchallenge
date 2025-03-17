@@ -51,7 +51,7 @@ riskDashboard.appendChild(riskCard);
 const increaseRiskLevelsBtn = document.getElementById('increasButtonLevelRisk');
 riskLevelElem.textContent.split("Risk level increasing ")
 increaseRiskLevelsBtn.addEventListener('click', function () {
-    const riskcards = document.querySelectorAll('.riskCard');//Implementing Bulk Updates
+    const riskcards = document.querySelectorAll('.riskCard');//Implementing Bulk Updates for task 5
 
 
 //Task 6
